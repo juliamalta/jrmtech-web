@@ -14,6 +14,11 @@ import Chat from '@/components/sections/Chat/Chat'
 import { Forms1 } from '@/components/sections/Form/Forms1'
 import Cards1 from '@/components/sections/Cards/Cards1'
 import Cards2 from '@/components/sections/Cards/Cards2'
+import Features2 from '@/components/sections/Features/Features2'
+import { TbSparkles } from 'react-icons/tb'
+import { MdVerifiedUser } from 'react-icons/md'
+import Features3 from '@/components/sections/Features/Features3'
+import Contact from '@/components/sections/Contact/Contact'
 
 export default function Home() {
     return (
@@ -95,6 +100,47 @@ export default function Home() {
                     },
                 ]}
             />
+            <Features2
+                tags={[
+                    {
+                        label: 'Modelos variados',
+                        icon: <TbSparkles className="size-4" />,
+                        position: 'top-right',
+                    },
+                    {
+                        label: 'Películas de proteção',
+                        icon: <MdVerifiedUser className="size-4" />,
+                        position: 'middle-left',
+                    },
+                    {
+                        label: 'Capinhas resistentes',
+                        icon: <CiMobile1 className="size-5" />,
+                        position: 'bottom-center',
+                    },
+                ]}
+            />
+            <Features3
+                cards={[
+                    {
+                        title: 'Formatação Completa',
+                        desc: 'Formatação completa com instalação do sistema, drivers e configurações essenciais para deixar seu computador rápido, limpo e pronto para uso.',
+                    },
+                    {
+                        title: 'Instalação de Softwares',
+                        desc: 'Programas essenciais instalados e configurados corretamente.',
+                    },
+
+                    {
+                        title: 'Manutenção de Computadores',
+                        desc: 'Correção de falhas, limpeza e otimização de desempenho.',
+                    },
+                    {
+                        title: 'Montagem de PC Gamer',
+                        desc: 'Configurações personalizadas para máximo desempenho nos jogos.',
+                    },
+                ]}
+            />
+            <Contact />
 
             <Chat />
         </>
