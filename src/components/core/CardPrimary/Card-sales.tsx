@@ -4,7 +4,7 @@ import { Heart, ShoppingBag, Truck } from 'lucide-react'
 
 function CardSales({ title, img, oldPrice = 'R$211,75', price = 'R$167,65', freeShipping }: CardSalesProps) {
     return (
-        <div className="flex h-full min-w-0 flex-col rounded-2xl gap-8">
+        <div className="flex h-full min-w-0 flex-col gap-8 rounded-2xl">
             {img && (
                 <div className="relative h-96 w-full shrink-0 overflow-hidden">
                     <Image src={img} alt={title} width={508} height={590} className="size-full object-contain" />

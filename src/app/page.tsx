@@ -45,19 +45,19 @@ export default function Home() {
                     },
                     {
                         title: 'Fones de Ouvido com Microfone Gamer HyperX Cloud Earbuds II...',
-                         img: '/images/earbuds-test.png',
+                        img: '/images/earbuds-test.png',
                         oldPrice: 'R$211,75',
                         price: 'R$167,65',
                     },
                     {
                         title: 'Fones de Ouvido com Microfone Gamer HyperX Cloud Earbuds II...',
-                     img: '/images/earbuds-test.png',
+                        img: '/images/earbuds-test.png',
                         oldPrice: 'R$211,75',
                         price: 'R$167,65',
                     },
                     {
                         title: 'Fones de Ouvido com Microfone Gamer HyperX Cloud Earbuds II...',
-                       img: '/images/earbuds-test.png',
+                        img: '/images/earbuds-test.png',
                         oldPrice: 'R$211,75',
                         price: 'R$167,65',
                     },
@@ -83,7 +83,7 @@ export default function Home() {
                     },
                     {
                         title: 'Fones de Ouvido com Microfone Gamer HyperX Cloud Earbuds II...',
-                         img: '/images/earbuds-test.png',
+                        img: '/images/earbuds-test.png',
                         oldPrice: 'R$211,75',
                         price: 'R$167,65',
                     },

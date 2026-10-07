@@ -94,7 +94,10 @@ function NavigationHeader({ logo, navs, buttonLink }: NavigationHeaderProps) {
                                     2
                                 </span>
                             </Link>
-                            <Link href="#conta" aria-label="Minha conta" className="transition-opacity hover:opacity-70">
+                            <Link
+                                href="#conta"
+                                aria-label="Minha conta"
+                                className="transition-opacity hover:opacity-70">
                                 <UserRound size={25} strokeWidth={1.8} />
                             </Link>
                         </div>

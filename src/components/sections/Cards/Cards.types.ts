@@ -43,7 +43,7 @@ export interface CardSectionProps {
     titlePrimary?: string
     title?: string | React.ReactNode
     desc?: string
-    link?:string
+    link?: string
     buttonText?: string
     img?: string
     cards?: CardData[]

@@ -38,7 +38,7 @@ function Cards3({ cards, title, desc, titlePrimary, buttonText, link }: CardSect
                                 img={card.img}
                                 oldPrice={card.oldPrice}
                                 price={card.price}
-                            freeShipping={card.freeShipping}
+                                freeShipping={card.freeShipping}
                             />
                         ))}
                     </div>
