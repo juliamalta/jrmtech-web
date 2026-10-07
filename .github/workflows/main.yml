@@ -1,0 +1,34 @@
+name: Deploy to Hostinger via FTP
+
+# Roda sempre que houver push na branch main
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  ftp-deploy:
+    name: 🚀 Deploy to Hostinger
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ Pega o código do repositório
+      - name: 📦 Checkout code
+        uses: actions/checkout@v4
+
+      # 2️⃣ Instala dependências e build estático
+      - name: 🛠️ Build FTP version
+        run: |
+          yarn install
+          yarn run build:ftp
+
+      # 3️⃣ Deploy via FTP
+      - name: 📁 Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: ./public_html/
+          local-dir: ./out/
