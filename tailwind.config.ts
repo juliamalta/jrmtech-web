@@ -64,6 +64,7 @@ const config: Config = {
                 },
                 color: {
                     charcoal: 'var(--charcoal)',
+                    cardWarm: 'var(--card-warm)',
                     fiord: 'var(--fiord-700)',
                     athensGray: 'var(--athens-gray-100)',
                     pickledBluewood: 'var(--pickled-bluewood-800)',

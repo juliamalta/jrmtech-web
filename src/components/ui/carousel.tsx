@@ -3,6 +3,8 @@
 import useEmblaCarousel, { type UseEmblaCarouselType } from 'embla-carousel-react'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import * as React from 'react'
+import { IoIosArrowBack, IoIosArrowDown } from 'react-icons/io'
+import { IoIosArrowForward } from 'react-icons/io'
 
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
@@ -172,7 +174,7 @@ function CarouselPrevious({
             variant={variant}
             size={size}
             className={cn(
-                'absolute size-8 rounded-full',
+                'absolute size-8 rounded-full bg-color-purble',
                 orientation === 'horizontal'
                     ? '-left-12 top-1/2 -translate-y-1/2'
                     : '-top-12 left-1/2 -translate-x-1/2 rotate-90',
@@ -181,7 +183,8 @@ function CarouselPrevious({
             disabled={!canScrollPrev}
             onClick={scrollPrev}
             {...props}>
-            <ArrowLeft />
+            <IoIosArrowBack color="white" size={20} />
+
             <span className="sr-only">Previous slide</span>
         </Button>
     )
@@ -201,7 +204,7 @@ function CarouselNext({
             variant={variant}
             size={size}
             className={cn(
-                'absolute size-8 rounded-full',
+                'absolute size-8 rounded-full bg-color-purble',
                 orientation === 'horizontal'
                     ? '-right-12 top-1/2 -translate-y-1/2'
                     : '-bottom-12 left-1/2 -translate-x-1/2 rotate-90',
@@ -210,7 +213,8 @@ function CarouselNext({
             disabled={!canScrollNext}
             onClick={scrollNext}
             {...props}>
-            <ArrowRight />
+            <IoIosArrowForward color="white" size={20}/>
+
             <span className="sr-only">Next slide</span>
         </Button>
     )
