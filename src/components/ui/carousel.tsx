@@ -213,7 +213,7 @@ function CarouselNext({
             disabled={!canScrollNext}
             onClick={scrollNext}
             {...props}>
-            <IoIosArrowForward color="white" size={20}/>
+            <IoIosArrowForward color="white" size={20} />
 
             <span className="sr-only">Next slide</span>
         </Button>

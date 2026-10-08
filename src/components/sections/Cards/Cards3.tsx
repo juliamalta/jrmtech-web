@@ -24,8 +24,8 @@ function Cards3({ cards, title, desc, titlePrimary, buttonText, link }: CardSect
                                 <p className="text-3xl font-semibold">{title}</p>
                             </BlurFade>
                         </div>
-                        <div className="2xl:w-2/6 2xl:text-right ">
-                            <Button variant="herobuttonsecondary" size="service" asChild className="rounded-2xl  ">
+                        <div className="2xl:w-2/6 2xl:text-right">
+                            <Button variant="herobuttonsecondary" size="service" asChild className="rounded-2xl">
                                 <Link href={link!}>{buttonText!}</Link>
                             </Button>
                         </div>
