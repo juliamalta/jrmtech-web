@@ -19,6 +19,7 @@ import { TbSparkles } from 'react-icons/tb'
 import { MdVerifiedUser } from 'react-icons/md'
 import Features3 from '@/components/sections/Features/Features3'
 import Contact from '@/components/sections/Contact/Contact'
+import FadeUp from '@/components/animations/FadeUp/FadeUp'
 
 export default function Home() {
     return (
@@ -35,114 +36,122 @@ export default function Home() {
                 button1text="Conheca mais"
                 button2text="Ver nossos trabalhos"
             />
-            <Cards3
-                title="Ofertas Tech!"
-                desc="Da primeira conversa ao produto final, transformamos visões em experiências digitais que conectam marcas aos seus públicos."
-                buttonText="Conheça mais"
-                link="teste"
-                cards={[
-                    {
-                        title: 'Fones de Ouvido com Microfone Gamer HyperX Cloud Earbuds II...',
-                        img: '/images/earbuds-product.png',
-                        oldPrice: 'R$211,75',
-                        price: 'R$167,65',
-                        freeShipping: true,
-                    },
-                    {
-                        title: 'Fones de Ouvido com Microfone Gamer HyperX Cloud Earbuds II...',
-                        img: '/images/earbuds-test.png',
-                        oldPrice: 'R$211,75',
-                        price: 'R$167,65',
-                    },
-                    {
-                        title: 'Fones de Ouvido com Microfone Gamer HyperX Cloud Earbuds II...',
-                        img: '/images/earbuds-test.png',
-                        oldPrice: 'R$211,75',
-                        price: 'R$167,65',
-                    },
-                    {
-                        title: 'Fones de Ouvido com Microfone Gamer HyperX Cloud Earbuds II...',
-                        img: '/images/earbuds-test.png',
-                        oldPrice: 'R$211,75',
-                        price: 'R$167,65',
-                    },
-                ]}
-            />
-            <Cards3
-                title="Mais procurado"
-                desc="Da primeira conversa ao produto final, transformamos visões em experiências digitais que conectam marcas aos seus públicos."
-                buttonText="Conheça mais"
-                link="teste"
-                cards={[
-                    {
-                        title: 'Fones de Ouvido com Microfone Gamer HyperX Cloud Earbuds II...',
-                        img: '/images/earbuds-test.png',
-                        oldPrice: 'R$211,75',
-                        price: 'R$167,65',
-                    },
-                    {
-                        title: 'Fones de Ouvido com Microfone Gamer HyperX Cloud Earbuds II...',
-                        img: '/images/earbuds-test.png',
-                        oldPrice: 'R$211,75',
-                        price: 'R$167,65',
-                    },
-                    {
-                        title: 'Fones de Ouvido com Microfone Gamer HyperX Cloud Earbuds II...',
-                        img: '/images/earbuds-test.png',
-                        oldPrice: 'R$211,75',
-                        price: 'R$167,65',
-                    },
-                    {
-                        title: 'Fones de Ouvido com Microfone Gamer HyperX Cloud Earbuds II...',
-                        img: '/images/earbuds-test.png',
-                        oldPrice: 'R$211,75',
-                        price: 'R$167,65',
-                    },
-                ]}
-            />
-            <Features2
-                tags={[
-                    {
-                        label: 'Modelos variados',
-                        icon: <TbSparkles className="size-4" />,
-                        position: 'top-right',
-                    },
-                    {
-                        label: 'Películas de proteção',
-                        icon: <MdVerifiedUser className="size-4" />,
-                        position: 'middle-left',
-                    },
-                    {
-                        label: 'Capinhas resistentes',
-                        icon: <CiMobile1 className="size-5" />,
-                        position: 'bottom-center',
-                    },
-                ]}
-            />
-            <Features3
-                cards={[
-                    {
-                        title: 'Formatação Completa',
-                        desc: 'Formatação completa com instalação do sistema, drivers e configurações essenciais para deixar seu computador rápido, limpo e pronto para uso.',
-                    },
-                    {
-                        title: 'Instalação de Softwares',
-                        desc: 'Programas essenciais instalados e configurados corretamente.',
-                    },
+            <FadeUp>
+                <Cards3
+                    title="Ofertas Tech!"
+                    desc="Da primeira conversa ao produto final, transformamos visões em experiências digitais que conectam marcas aos seus públicos."
+                    buttonText="Conheça mais"
+                    link="teste"
+                    cards={[
+                        {
+                            title: 'Teclado Mecânico Gamer RGB...',
+                            img: '/images/keyboard-gamer.png',
+                            oldPrice: 'R$211,75',
+                            price: 'R$167,65',
+                            freeShipping: true,
+                        },
+                        {
+                            title: 'Mouse Gamer RGB...',
+                            img: '/images/mouse-gamer.png',
+                            oldPrice: 'R$211,75',
+                            price: 'R$167,65',
+                        },
+                        {
+                            title: 'Headset Gamer com Microfone...',
+                            img: '/images/headset-gamer.png',
+                            oldPrice: 'R$211,75',
+                            price: 'R$167,65',
+                        },
+                        {
+                            title: 'Controle Gamer Sem Fio...',
+                            img: '/images/controller-gamer.png',
+                            oldPrice: 'R$211,75',
+                            price: 'R$167,65',
+                        },
+                    ]}
+                />
+            </FadeUp>
+            <FadeUp y={80}>
+                <Cards3
+                    title="Mais procurado"
+                    desc="Da primeira conversa ao produto final, transformamos visões em experiências digitais que conectam marcas aos seus públicos."
+                    buttonText="Conheça mais"
+                    link="teste"
+                    cards={[
+                        {
+                            title: 'Webcam Full HD para Computador...',
+                            img: '/images/webcam.png',
+                            oldPrice: 'R$211,75',
+                            price: 'R$167,65',
+                        },
+                        {
+                            title: 'Teclado Mecânico Branco RGB...',
+                            img: '/images/keyboard-white.png',
+                            oldPrice: 'R$211,75',
+                            price: 'R$167,65',
+                        },
+                        {
+                            title: 'Teclado Mecânico Roxo RGB...',
+                            img: '/images/keyboard-purple.png',
+                            oldPrice: 'R$211,75',
+                            price: 'R$167,65',
+                        },
+                        {
+                            title: 'Teclado Mecânico Gamer Laranja...',
+                            img: '/images/keyboard-orange.png',
+                            oldPrice: 'R$211,75',
+                            price: 'R$167,65',
+                        },
+                    ]}
+                />
+            </FadeUp>
+            <FadeUp y={80}>
+                <Features2
+                    tags={[
+                        {
+                            label: 'Modelos variados',
+                            icon: <TbSparkles className="size-4" />,
+                            position: 'top-right',
+                        },
+                        {
+                            label: 'Películas de proteção',
+                            icon: <MdVerifiedUser className="size-4" />,
+                            position: 'middle-left',
+                        },
+                        {
+                            label: 'Capinhas resistentes',
+                            icon: <CiMobile1 className="size-5" />,
+                            position: 'bottom-center',
+                        },
+                    ]}
+                />
+            </FadeUp>
+            <FadeUp y={80}>
+                <Features3
+                    cards={[
+                        {
+                            title: 'Formatação Completa',
+                            desc: 'Formatação completa com instalação do sistema, drivers e configurações essenciais para deixar seu computador rápido, limpo e pronto para uso.',
+                        },
+                        {
+                            title: 'Instalação de Softwares',
+                            desc: 'Programas essenciais instalados e configurados corretamente.',
+                        },
 
-                    {
-                        title: 'Manutenção de Computadores',
-                        desc: 'Correção de falhas, limpeza e otimização de desempenho.',
-                    },
-                    {
-                        title: 'Montagem de PC Gamer',
-                        desc: 'Configurações personalizadas para máximo desempenho nos jogos.',
-                    },
-                ]}
-            />
-            <Contact />
-
-            <Chat />
+                        {
+                            title: 'Manutenção de Computadores',
+                            desc: 'Correção de falhas, limpeza e otimização de desempenho.',
+                        },
+                        {
+                            title: 'Montagem de PC Gamer',
+                            desc: 'Configurações personalizadas para máximo desempenho nos jogos.',
+                        },
+                    ]}
+                />
+            </FadeUp>
+            <FadeUp y={80}>
+                <Contact />
+            </FadeUp>
         </>
     )
 }

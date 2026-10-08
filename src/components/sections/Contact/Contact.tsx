@@ -1,7 +1,7 @@
 'use client'
 function Contact() {
     return (
-        <section className="bg-[#2D2D2D] py-24">
+        <section className="bg-[#2D2D2D] py-32">
             <div className="container flex flex-col justify-between gap-8 2xl:flex-row">
                 <div>
                     <div className="flex flex-col gap-2">

@@ -5,9 +5,9 @@ import Image from 'next/image'
 
 function Footer({ rights }: FooterProps) {
     return (
-        <section id="footer" className="overflow-hidden">
+        <section id="footer" className="overflow-hidden bg-[#2D2D2D]">
             {/* Copyright and Social Media Links */}
-            <div className="container mx-auto bg-white">
+            <div className="container mx-auto  bg-[#2D2D2D]">
                 <div className="flex flex-wrap items-center justify-center border-color-boulder">
                     <div className="md-gap-0 flex w-full items-center justify-between gap-10 py-12">
                         <div className="flex items-start">
@@ -19,7 +19,7 @@ function Footer({ rights }: FooterProps) {
                         <div className="flex flex-col gap-3">
                             <div className="flex items-center md:justify-end">
                                 <div className="items-center justify-center">
-                                    <p className="text-black">© Code Creative. Todos os direitos reservados</p>
+                                    <p className="text-white">© Code Creative. Todos os direitos reservados</p>
                                 </div>
                             </div>
                         </div>

@@ -22,7 +22,7 @@ export function RootProviders({ children }: { children: React.ReactNode }) {
 
             {children}
 
-            {!isVendas && <Footer rights="© 2026 Code Creative. Todos os direitos reservados." />}
+           
         </>
     )
 }
