@@ -16,7 +16,7 @@ export function HeroSection({ title, desc, button1text, button2text, titlePrimar
         <>
             <section
                 id="inicio"
-                className="container mx-auto rounded-2xl bg-cover bg-center px-2 py-16 sm:py-16"
+                className="container mx-auto 2xl:bg-cover bg-center px-2 py-16 sm:py-16 2xl:rounded-2xl"
                 style={{ backgroundImage: "url('/images/codebg.png')" }}>
                 <div className="container flex flex-col gap-8">
                     <div className="flex flex-col gap-8">

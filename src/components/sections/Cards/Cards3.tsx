@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { FaFire } from 'react-icons/fa'
 import CardSales from '@/components/core/CardPrimary/Card-sales'
+import { motion } from 'framer-motion'
 
 function Cards3({ cards, title, desc, titlePrimary, buttonText, link }: CardSectionProps) {
     return (
@@ -16,7 +17,7 @@ function Cards3({ cards, title, desc, titlePrimary, buttonText, link }: CardSect
             <AnimatedTechBackground />
             <div className="container mx-auto">
                 <div className="flex flex-col gap-8">
-                    <div className="flex flex-col justify-between gap-2 2xl:flex-row">
+                    <div className="flex flex-row justify-between gap-2">
                         <div className="flex w-full items-center gap-4">
                             <FaFire color="#B868E1" size={28} />
 
@@ -32,14 +33,20 @@ function Cards3({ cards, title, desc, titlePrimary, buttonText, link }: CardSect
                     </div>
                     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
                         {cards?.map((card, index) => (
-                            <CardSales
+                            <motion.div
                                 key={index}
-                                title={card.title}
-                                img={card.img}
-                                oldPrice={card.oldPrice}
-                                price={card.price}
-                                freeShipping={card.freeShipping}
-                            />
+                                initial={{ opacity: 0, y: 24 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.45, delay: index * 0.08 }}
+                                viewport={{ once: true, amount: 0.2 }}>
+                                <CardSales
+                                    title={card.title}
+                                    img={card.img}
+                                    oldPrice={card.oldPrice}
+                                    price={card.price}
+                                    freeShipping={card.freeShipping}
+                                />
+                            </motion.div>
                         ))}
                     </div>
                 </div>
