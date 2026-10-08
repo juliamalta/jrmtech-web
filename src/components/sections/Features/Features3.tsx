@@ -17,7 +17,7 @@ function Features3({ cards }: Features3Props) {
                     containScroll: 'trimSnaps',
                 }}
                 className="w-full">
-                <div className="flex flex-col gap-8 2xl:flex-row lg:gap-8">
+                <div className="flex flex-col gap-8 lg:gap-8 2xl:flex-row">
                     {/* Lado esquerdo */}
                     <div className="flex w-1/4 shrink-0 flex-col gap-8">
                         <h2 className="text-5xl font-bold text-black">Serviços Especializados</h2>

@@ -7,7 +7,7 @@ function Footer({ rights }: FooterProps) {
     return (
         <section id="footer" className="overflow-hidden bg-[#2D2D2D]">
             {/* Copyright and Social Media Links */}
-            <div className="container mx-auto  bg-[#2D2D2D]">
+            <div className="container mx-auto bg-[#2D2D2D]">
                 <div className="flex flex-wrap items-center justify-center border-color-boulder">
                     <div className="md-gap-0 flex w-full items-center justify-between gap-10 py-12">
                         <div className="flex items-start">
