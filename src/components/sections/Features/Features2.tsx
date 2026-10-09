@@ -18,7 +18,7 @@ function Features2({ tags = [] }: Features2Props) {
     return (
         <section id="features" className="container py-24">
             <div className="relative h-[560px] overflow-hidden rounded-2xl bg-[repeating-linear-gradient(180deg,rgba(255,255,255,0.1)_0,rgba(255,255,255,0.1)_2px,transparent_2px,transparent_10px),linear-gradient(180deg,#3a075d_0%,#642183_35%,#a84ac4_68%,#d88cf0_100%)] sm:h-[580px] md:h-[330px] lg:h-[clamp(360px,27vw,394px)] xl:h-[430px]">
-                <div className="relative z-10 flex h-auto w-full flex-col items-center justify-center gap-6 p-6 sm:p-8 md:h-full md:w-[46%] md:items-start md:justify-start md:justify-center md:gap-8 md:p-10 lg:w-[48%] lg:p-16">
+                <div className="relative z-10 flex h-auto w-full flex-col items-center justify-center gap-6 p-6 sm:p-8 md:h-full md:w-[46%] md:items-start md:justify-center md:gap-8 md:p-10 lg:w-[48%] lg:p-16">
                     <div>
                         <h1 className="mx-auto w-full max-w-[92%] text-center text-5xl font-bold leading-[0.98] text-white md:max-w-full md:text-left md:text-4xl lg:text-5xl lg:leading-tight 2xl:text-6xl">
                             Proteja seu celular ainda hoje
