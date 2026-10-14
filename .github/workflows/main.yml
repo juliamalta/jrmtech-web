@@ -20,7 +20,7 @@ jobs:
       # 2️⃣ Instala dependências e build estático
       - name: 🛠️ Build FTP version
         run: |
-          yarn install
+          yarn install --frozen-lockfile
           yarn run build:ftp
 
       # 3️⃣ Deploy via FTP

@@ -5,12 +5,8 @@ import './globals.css'
 import { CiPhone } from 'react-icons/ci'
 import { CiMail } from 'react-icons/ci'
 import { Toaster } from 'sonner'
-import { GoogleAnalyticsClient } from '@/components/GoogleAnalyticsClient'
 import { configs } from '@/configs'
 import { cn } from '@/lib/utils'
-import Pixel from '@/components/pixel'
-import { GTM } from '@/components/gtm'
-import { Contentsquare } from '@/components/contentSquare'
 import { RootProviders } from '@/app/RootProviders'
 
 const spaceGrotesk = Space_Grotesk({
@@ -45,10 +41,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
     return (
         <html lang="en" className="scroll-smooth">
             <body className={cn('min-h-screen bg-background antialiased', manrope.className)}>
-                <Contentsquare />
-                <Pixel />
-                <GoogleAnalyticsClient gaMeasurementId="G-322MDB8015" />
-                <GTM gtmId="G-322MDB8015" />
                 <RootProviders>{children}</RootProviders>
                 <Toaster richColors position="top-right" />
             </body>
