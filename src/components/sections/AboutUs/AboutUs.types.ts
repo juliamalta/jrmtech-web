@@ -1,5 +1,5 @@
 export interface aboutData {
-    icon?: JSX.Element
+    icon?: React.JSX.Element
     title: string | React.ReactNode
     text: string
 }
