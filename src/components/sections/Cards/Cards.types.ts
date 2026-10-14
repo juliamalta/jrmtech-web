@@ -1,7 +1,7 @@
 // CardSection.types.ts
 
 export interface CardData {
-    icon?: JSX.Element
+    icon?: React.JSX.Element
     title: string
     titleApp?: string
     text?: string
@@ -21,7 +21,7 @@ export interface CardData {
     paymentTitle?: string
 }
 export interface CardHighData {
-    icon?: JSX.Element
+    icon?: React.JSX.Element
     title: string
     titleApp?: string
     text?: string
@@ -47,6 +47,6 @@ export interface CardSectionProps {
     buttonText?: string
     img?: string
     cards?: CardData[]
-    icon?: JSX.Element
+    icon?: React.JSX.Element
     cardsHight?: CardHighData[]
 }

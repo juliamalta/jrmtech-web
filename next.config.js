@@ -34,7 +34,6 @@ const securityHeaders = [
 const nextConfig = {
     trailingSlash: true,
     reactStrictMode: true,
-    swcMinify: true,
     images: {
         unoptimized: true, // desabilita otimização de imagens
     },
