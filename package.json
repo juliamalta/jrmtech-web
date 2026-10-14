@@ -8,7 +8,6 @@
         "start": "next start",
         "build": "next build",
         "start:ssr": "next start",
-        "build:ftp": "cross-env NEXT_EXPORT=true next build",
         "lint": "next lint --fix",
         "format": "prettier --write .",
         "prepare": "husky"
@@ -41,7 +40,6 @@
         "@types/react": "^18",
         "@types/react-dom": "^18",
         "autoprefixer": "^10.4.20",
-        "cross-env": "^10.1.0",
         "eslint": "^8.57.0",
         "eslint-config-next": "14.2.15",
         "eslint-config-prettier": "^9.1.0",
